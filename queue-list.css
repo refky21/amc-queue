@@ -1,0 +1,374 @@
+.main-container {
+  display: flex;
+  flex: 1 1 0%;
+  padding: 1rem;
+  position: relative;
+  flex-direction: column;
+}
+
+.header {
+  border-radius: .75rem;
+  z-index: 10;
+  height: 6rem;
+  margin-bottom: .5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-text {
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header-background {
+  border-radius: .75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5rem;
+}
+
+.video-screen {
+  border-width: 4px;
+  flex: 1 1 0%;
+  border-radius: .75rem;
+  margin-bottom: .5rem;
+}
+
+.sidebar {
+  position: relative;
+  padding: 1rem;
+  width: 552px;
+}
+
+.sidebar-background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 6rem;
+}
+
+.queue-card {
+  display: flex;
+  border-radius: 0.75rem;
+}
+
+.queue-card-item {
+  height: 118px;
+  width: 344px;
+}
+
+.queue-card-list {
+  height: 118px;
+}
+
+.queue-card-list.queue-card:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.queue-room {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.queue-room-text {
+  position: absolute;
+  padding: 0 1rem 0 1rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.queue-card-item .queue-room {
+  width: 7rem;
+}
+
+.queue-card-list .queue-room {
+  width: 11rem;
+}
+
+.queue-number, .queue-locket {
+  display: flex;
+  padding: .5rem 0 .5rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.queue-card-item .queue-locket {
+  width: 4rem;
+}
+
+.queue-card-list .queue-locket {
+  width: 6rem;
+}
+
+.queue-number {
+  flex-grow: 1;
+}
+
+.queue-label {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.queue-value {
+  position: absolute;
+  padding: 0 .5rem 0 .5rem;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+}
+
+.queue-card-item .queue-value {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.queue-card-list .queue-value {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.dialog-container {
+  top: 0; left: 0; bottom: 0; right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.dialog-background {
+  top: 0; left: 0; bottom: 0; right: 0;
+  position: absolute;
+  opacity: .8;
+}
+
+.dialog {
+  width: 600px;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+}
+
+.dialog-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding:  1.75rem 0 1.75rem 0;
+  letter-spacing: .05em;
+}
+
+.dialog-body-background {
+  position: relative;
+  flex: 1 1 0%;
+}
+
+.dialog-body {
+  position: absolute;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 5rem 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  bottom: .75rem;
+}
+
+.new-queue-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.new-queue-value {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1366px) {
+  .sidebar {
+    width: 566px;
+  }
+
+  .queue-card-item {
+    height: 128px;
+    width: 378px;
+  }
+
+  .queue-card-item .queue-room {
+    width: 8rem;
+  }
+
+  .queue-card-list {
+    height: 128px;
+  }
+
+  .queue-card-item .queue-value {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .main-container {
+    padding: 1.5rem;
+  }
+
+  .header {
+    height: 9rem;
+  }
+
+  .header-text {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .header-background {
+    height: 8rem;
+  }
+
+  .header, .video-screen {
+    margin-bottom: 1rem;
+  }
+
+  .video-screen {
+    border-width: 8px;
+  }
+  
+  .sidebar {
+    width: 816px;
+    padding: 1.5rem;
+  }
+
+  .sidebar-background {
+    width: 10rem;
+  }
+
+  .queue-card {
+    border-radius: 1rem;
+  }
+
+  .queue-room {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  
+  .queue-room-text {
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .queue-card-item .queue-room {
+    width: 10rem;
+  }
+  
+  .queue-card-list .queue-room {
+    width: 14rem;
+  }
+
+  .queue-card-item {
+    height: 174px;
+    width: 520px;
+  }
+
+  .queue-card-list {
+    height: 174px;
+  }
+
+  .queue-card-list.queue-card:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .queue-label {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .queue-card-item .queue-value {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  
+  .queue-card-list .queue-value {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .queue-number, .queue-locket {
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .queue-card-item .queue-locket {
+    width: 7rem;
+  }
+  
+  .queue-card-list .queue-locket {
+    width: 8rem;
+  }
+
+  .dialog {
+    width: 900px;
+    height: 30rem;
+  }
+  
+  .dialog-title {
+    font-size: 3rem;
+    line-height: 1;
+    padding:  2.5rem 0 2.5rem 0;
+  }
+  
+  .dialog-body {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 0 8rem 0 8rem;
+    bottom: 1.25rem;
+  }
+  
+  .new-queue-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .new-queue-value {
+    font-size: 8rem;
+    line-height: 1;
+  }
+}

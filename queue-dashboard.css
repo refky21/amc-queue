@@ -1,0 +1,152 @@
+.bg-white-transparent {
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.bg-white-3d {
+  background: linear-gradient(to bottom, #f3f4f6, #e5e7eb, #d1d5db);
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.header-accent {
+  height: 1rem;
+  border-bottom-width: 8px;
+}
+
+.header-pattern1 {
+  position: absolute;
+  width: 10rem;
+  height: 7rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.header-pattern2 {
+  border-bottom-right-radius: 0.75rem;
+  position: absolute;
+  width: 8rem;
+  height: 5rem;
+  z-index: 20;
+  top: 0;
+}
+
+.header-pattern1:after {
+  content: '';
+  border-top: 6.5rem solid #00C30D;
+  border-right: 3rem solid transparent;
+  position: absolute;
+  right: -2.85rem;
+}
+
+.header-pattern2:after {
+  content: '';
+  border-top: 4.5rem solid #095209;
+  border-right: 2rem solid transparent;
+  position: absolute;
+  right: -1.96rem;
+}
+
+.content-container {
+  display: flex;
+  flex: 1 1 0%;
+  height: 0%;
+}
+
+.content-wrapper {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.title-wrapper {
+  position: relative;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.title-text {
+  text-transform: uppercase;
+  z-index: 20;
+  margin-left: 13rem;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.locket-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-button {
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.form-input {
+  border-radius: 9999px;
+  padding: .5rem 1rem .5rem 1rem;
+  outline: none;
+  width: 16rem;
+}
+
+.table-wrapper {
+  flex: 1 1 0%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  overflow-y: scroll;
+  height: 0px;
+}
+
+.app-table {
+  width: 100%;
+  border-bottom-width: 1px;
+  position: relative;
+}
+
+.app-table-thead {
+  text-transform: uppercase;
+}
+
+.app-table-th {
+  padding: .75rem;
+  position: sticky;
+  top: 0;
+  border-bottom-width: 2px;
+}
+
+.app-table-tr {
+  background-color: #00C30D;
+}
+
+.app-table-tr:nth-child(even) {
+  background-color: #095209;
+}
+
+.app-table-td {
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+.table-footer {
+  position: sticky;
+  height: 3rem;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem 0 1rem;
+  border-top-width: 2px;
+}

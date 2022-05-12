@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMC - Queue Dashboard</title>
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="queue-caller.css">
+  <link rel="stylesheet" href="queue-dashboard.css">
+
+  <script src="https://kit.fontawesome.com/f1a6684a2b.js" crossorigin="anonymous"></script>
+</head>
+<body class="parent-container bg-gray-100">
+  <div class="header-accent bg-lime border-avocado"></div>
+  <div class="header-pattern1 bg-lime"></div>
+  <div class="header-pattern2 bg-avocado"></div>
+
+  <div class="content-container text-gray-500">
+    <div class="content-wrapper">  
+      <div class="title-wrapper self-start">
+        <h1 class="title-text text-lime">Asri Medical Center</h1>
+      </div>
+
+      <div class="locket-form">
+        <button class="form-button bg-white-3d outer-shadow">
+          Submit
+          <i class="fa fa-send text-lime ml-1"></i>
+        </button>
+
+        <input type="text" class="form-input text-white inner-shadow bg-lime" placeholder="Masukkan loket disini">
+      </div>
+
+      <div class="table-wrapper bg-lime text-white">
+        <table class="app-table border-avocado">
+          <thead>
+            <tr class="app-table-thead app-table-tr">
+              <th class="app-table-th bg-avocado border-green-800">Nomor Antrian</th>
+              <th class="app-table-th bg-avocado border-green-800">Ruang</th>
+              <th class="app-table-th bg-avocado border-green-800">Loket</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A004</td>
+              <td class="app-table-td">Laboratorium</td>
+              <td class="app-table-td text-center">7</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A003</td>
+              <td class="app-table-td">BP Gigi</td>
+              <td class="app-table-td text-center">3</td>
+            </tr>
+            <tr class="app-table-tr">
+              <td class="app-table-td uppercase text-lg">A002</td>
+              <td class="app-table-td">KIA</td>
+              <td class="app-table-td text-center">2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-footer bg-avocado border-green-800">
+          Total entries: <b class="ml-1 text-lg">20</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container text-gray-500" style="width: 600px; height: 100%;">
+      <div class="header">
+        <div class="locket-container bg-gray-200 inner-shadow">
+          <span class="locket-label">Loket</span> <b class="text-lime">4</b>
+        </div>
+  
+        <a href="#" class="app-exit text-lime">
+          <i class="fa fa-power-off"></i>
+        </a>
+      </div>
+  
+      <div class="main-content">
+        <div>
+          <div class="queue-number-wrapper border-gray-200">
+            <div class="queue-number-border bg-lime-3d text-lime"> 
+              <div class="queue-number bg-white">
+                A004
+              </div>
+            </div>
+          </div>
+    
+          <div class="app-text">
+            <div class="app-text-title text-lime">Customer Service</div>
+            <div class="app-text-subtitle">Sisa Antrian 10</div>
+          </div>
+    
+          <div class="queue-call-background bg-gray-200 inner-shadow">
+            <button class="queue-call-button text-white bg-lime-3d outer-shadow">Call</button>
+          </div>
+    
+          <div class="queue-action-list bg-gray-200 inner-shadow">
+            <div class="queue-action-frame bg-lime">
+              <button class="queue-action bg-white-transparent text-lime">
+                <i class="fa fa-stop"></i>
+              </button>
+            </div>
+            <div class="queue-action-frame bg-lime">
+              <button class="queue-action bg-white-transparent text-lime">
+                <i class="fa fa-pause"></i>
+              </button>
+            </div>
+            <div class="queue-action-frame bg-lime">
+              <button class="queue-action bg-white-transparent text-lime">
+                <i class="fa fa-forward"></i>
+              </button>
+            </div>
+            <div class="queue-action-frame bg-lime">
+              <button class="queue-action bg-white-transparent text-lime">
+                <i class="fa fa-play"></i>
+              </button>
+            </div>
+          </div>
+    
+          <div class="queue-action-label-list">
+            <div class="queue-action-label">
+              Finish
+            </div>
+            <div class="queue-action-label">
+              Skip
+            </div>
+            <div class="queue-action-label">
+              Forward
+            </div>
+            <div class="queue-action-label">
+              Special
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="user-container">
+        <div class="user-wrapper">
+          <div class="user-icon border-lime text-lime">
+            <i class="fa fa-user-circle"></i>
+          </div>
+          John Doe
+        </div>
+      </div>
+  
+      <div class="background-1 bg-lime"></div>
+      <div class="background-2 bg-avocado"></div>
+    </div>
+  </div>
+</body>
+</html>

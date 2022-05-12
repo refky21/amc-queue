@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asri Medical Center (AMC)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="queue-list.css">
+</head>
+<body>
+  <div class="h-screen flex flex-col bg-lime">
+    <div class="dialog-container" id="dialog">
+      <div class="dialog-background bg-black"></div>
+
+      <div class="dialog">
+        <div class="dialog-title text-white bg-green-glossy">Laboratorium</div>
+        <div class="dialog-body-background bg-avocado">
+          <div class="dialog-body bg-white-glossy text-avocado">
+            <div>
+              <div class="new-queue-title">Nomor Antrian</div>
+              <div class="new-queue-value">D003</div>
+            </div>
+            <div>
+              <div class="new-queue-title">Loket</div>
+              <div class="new-queue-value">7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-1 flex">
+      <div class="main-container">
+        <div class="header-background bg-avocado"></div>
+
+        <div class="header bg-white-glossy text-avocado">
+          <div class="header-text">Asri Medical Center</div>
+        </div>
+
+        <div class="video-screen border-avocado bg-gray-500"></div>
+
+        <div class="flex justify-between">
+          <div class="queue-card queue-card-item bg-white-glossy text-avocado">
+            <div class="queue-room bg-green-glossy text-white">
+              <div class="queue-room-text">BP Umum</div>
+            </div>
+            
+            <div class="queue-number">
+              <div class="queue-label">Nomor Antrian</div>
+              <div class="queue-value">A009</div>
+            </div>
+
+            <div class="queue-locket">
+              <div class="queue-label">Loket</div>
+              <div class="queue-value">1</div>
+            </div>
+          </div>
+
+          <div class="queue-card queue-card-item bg-white-glossy text-avocado">
+            <div class="queue-room bg-green-glossy text-white">
+              <div class="queue-room-text">Lab</div>
+            </div>
+            
+            <div class="queue-number">
+              <div class="queue-label">Nomor Antrian</div>
+              <div class="queue-value">B008</div>
+            </div>
+
+            <div class="queue-locket">
+              <div class="queue-label">Loket</div>
+              <div class="queue-value">2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-background bg-avocado"></div>
+
+      <div class="sidebar">
+        <div class="queue-card queue-card-list bg-white-glossy text-avocado">
+          <div class="queue-room bg-green-glossy text-white">
+            <div class="queue-room-text">BP Gigi</div>
+          </div>
+
+          <div class="queue-number">
+            <div class="queue-label">Nomor Antrian</div>
+            <div class="queue-value text-8xl">C004</div>
+          </div>
+
+          <div class="queue-locket">
+            <div class="queue-label">Loket</div>
+            <div class="queue-value">3</div>
+          </div>
+        </div>
+
+        <div class="queue-card queue-card-list bg-white-glossy text-avocado">
+          <div class="queue-room bg-green-glossy text-white">
+            <div class="queue-room-text">KIA</div>
+          </div>
+
+          <div class="queue-number">
+            <div class="queue-label">Nomor Antrian</div>
+            <div class="queue-value text-8xl">D003</div>
+          </div>
+
+          <div class="queue-locket">
+            <div class="queue-label">Loket</div>
+            <div class="queue-value">4</div>
+          </div>
+        </div>
+      
+        <div class="queue-card queue-card-list bg-white-glossy text-avocado">
+          <div class="queue-room bg-green-glossy text-white">
+            <div class="queue-room-text">Apotik</div>
+          </div>
+
+          <div class="queue-number">
+            <div class="queue-label">Nomor Antrian</div>
+            <div class="queue-value text-8xl">E002</div>
+          </div>
+
+          <div class="queue-locket">
+            <div class="queue-label">Loket</div>
+            <div class="queue-value">5</div>
+          </div>
+        </div>
+      
+        <div class="queue-card queue-card-list bg-white-glossy text-avocado">
+          <div class="queue-room bg-green-glossy text-white">
+            <div class="queue-room-text">KIA</div>
+          </div>
+
+          <div class="queue-number">
+            <div class="queue-label">Nomor Antrian</div>
+            <div class="queue-value text-8xl">D003</div>
+          </div>
+
+          <div class="queue-locket">
+            <div class="queue-label">Loket</div>
+            <div class="queue-value">6</div>
+          </div>
+        </div>
+      
+        <div class="queue-card queue-card-list bg-white-glossy text-avocado">
+          <div class="queue-room bg-green-glossy text-white">
+            <div class="queue-room-text">KIA</div>
+          </div>
+
+          <div class="queue-number">
+            <div class="queue-label">Nomor Antrian</div>
+            <div class="queue-value text-8xl">D003</div>
+          </div>
+
+          <div class="queue-locket">
+            <div class="queue-label">Loket</div>
+            <div class="queue-value">7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer bg-white-glossy">
+      <div class="footer-content bg-avocado flex items-center">
+        <div class="footer-date text-white">
+          <div>Senin</div>
+          <div>20-07-2021</div>
+        </div>
+
+        <div class="footer-news text-white">
+          <div class="news-list">
+            <div class="news-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="news-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="news-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="news-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="news-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-times text-avocado">12:30</div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      setTimeout(() => {
+        document.getElementById('dialog').style.display = 'none'
+      }, 2500)
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.bg-lime {
+  background-color: #00C30D;
+}
+
+.bg-lime::placeholder {
+  color: rgba(255, 255, 255, .8);
+}
+
+.bg-apple {
+  background-color: #089D19;
+}
+
+.bg-avocado {
+  background-color: #095209;
+}
+
+.bg-white-glossy {
+  background-image: linear-gradient(to bottom, #ffff 0%, #E5E7EB 50%, #D1D5DB 50%, #9CA3AF 100%);
+}
+
+.bg-green-glossy {
+  background-image: linear-gradient(to bottom, #079D18 0%, #0A8914 50%, #07663A 50%, #0D590B 100%);
+}
+
+.text-avocado {
+  color: #095209;
+}
+
+.text-apple {
+  color: #089D19;
+}
+
+.text-lime {
+  color: #00C30D;
+}
+
+.border-avocado {
+  border-color: #095209;
+}
+
+.border-lime {
+  border-color: #00C30D;
+}
+
+.footer {
+  display: flex;
+  padding: .5rem .1rem 0 1rem;
+  z-index: 10;
+  height: 4rem;
+}
+
+.footer-content {
+  flex: 1 1 0%;
+  height: 100%;
+  width: 100%;
+  border-radius: .75rem;
+}
+
+.footer-times {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  width: 8rem;
+}
+
+.footer-date {
+  text-align: center;
+  width: 10rem;
+  padding: 0 1rem 0 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-news {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  flex: 1 1 0%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-list {
+  position: absolute;
+  white-space: nowrap;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 100%;
+  animation: scroll-left 40s linear infinite;
+}
+
+.news-item:not(:last-child):after {
+  content: '-';
+  min-width: 10px;
+  margin-right: 10px;
+  margin-left: 10px
+}
+
+@media only screen and (min-width: 1920px) {
+  .footer {
+    height: 6rem;
+    padding: .75rem .1rem 0 1.5rem;
+  }
+
+  .footer-date {
+    width: 12rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .footer-times {
+    font-size: 3rem;
+    line-height: 1;
+    width: 11rem;
+  }
+
+  .footer-news {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .footer-content {
+    border-radius: 1rem;
+  }
+}
+
+@keyframes scroll-left {
+  0% { transform: translate3d(0, 0, 0); visibility: visible }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
